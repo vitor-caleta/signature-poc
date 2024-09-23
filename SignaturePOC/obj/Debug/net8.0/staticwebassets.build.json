@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DBuHSpF+6hbHmdc9XUBQG1QJ5b7c0csb9To67SHze1w=",
+  "Source": "SignaturePOC",
+  "BasePath": "_content/SignaturePOC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
