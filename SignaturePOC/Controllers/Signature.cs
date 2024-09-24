@@ -31,8 +31,7 @@ namespace SignaturePOC.Controllers
             }
         }
 
-        [HttpPost]
-        [Route("create")]
+        [HttpPost("/create")]
         public IActionResult CreateSignature(){
             var result = _signatureService.CreateSignature();
             return Ok(result);

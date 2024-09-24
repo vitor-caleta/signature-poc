@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SignaturePOC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ae0e18278847f106dc5ca3479a10b72fe62d824")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88a13c6eb3947544a3511e06deb518b2d3a0bb55")]
 [assembly: System.Reflection.AssemblyProductAttribute("SignaturePOC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SignaturePOC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

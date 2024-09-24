@@ -32,3 +32,4 @@
 /home/vitor/Documentos/Repository/signature_poc/SignaturePOC/obj/Debug/net8.0/SignaturePOC.pdb
 /home/vitor/Documentos/Repository/signature_poc/SignaturePOC/obj/Debug/net8.0/SignaturePOC.genruntimeconfig.cache
 /home/vitor/Documentos/Repository/signature_poc/SignaturePOC/obj/Debug/net8.0/ref/SignaturePOC.dll
+/home/vitor/Documentos/Repository/signature_poc/SignaturePOC/bin/Debug/net8.0/Newtonsoft.Json.dll
