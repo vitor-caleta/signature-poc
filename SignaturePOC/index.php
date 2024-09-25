@@ -49,28 +49,25 @@ class Api {
     }
 
     private function verify($body, $headers) {
-        
         $encoded_body = hash("sha256", $body);
         $decodedSignature = base64_decode($headers['X-Auth-Signature']);
 
-        $verify = openssl_verify($body, $decodedSignature, $this->publicKey, OPENSSL_ALGO_SHA256);
-        if ($verify === 1) {
-            return true;
-        } elseif ($verify === 0) {
-            return false;
-        } else {
-            return "Verification failed: " . openssl_error_string();
-        }
+        $result = openssl_verify($body, $decodedSignature, $this->publicKey, OPENSSL_ALGO_SHA256);
+        return $result;
     }
 
-    private function create(){
-        $payload = ["a" => "b"];
-        $msg = json_encode($payload);
-        $sha256Hash = hash("sha256", $msg, true);
-        $signature = "";
-        
-        openssl_sign($sha256Hash, $signature, $this->privateKey, OPENSSL_ALGO_SHA256);
-        return base64_encode($signature);
+    function create() {
+        $payload = [
+            'a' => 'b'
+        ];
+
+        $data = json_encode($payload);
+
+        $key = openssl_pkey_get_private($this->privateKey);
+        openssl_sign($data, $signature, $key, OPENSSL_ALGO_SHA256);
+        $base64 = base64_encode($signature);
+
+        return $base64;
     }
 }
 
